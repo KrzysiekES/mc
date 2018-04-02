@@ -1,0 +1,38 @@
+:host() {
+     background: #f2f2f2;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-info {
+  font-weight: 500;
+  h1 {
+
+  }
+  span {
+    font-family: arial;
+  }
+  img {
+    margin-top: 5px;
+    margin-left: -5px;
+    width: 140px;
+  }
+}
+
+agm-map {
+    min-height: 300px;
+    height: 300px;
+    z-index: 2;
+    width: 100%;
+    left: -500px;
+  }
+
+  @media only screen and (max-width: 768px) { 
+    h1 {
+      font-size: 24px !important;
+    }
+    span {
+      font-size: 14px !important;
+    }
+
+  }

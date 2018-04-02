@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <section class="col-md-6  mt-4 mb-4">
+      <div class="contact-info  card-body">
+          <h1>{{ data?.title }}</h1>
+          <span [innerHtml]="data?.description" class="info"></span><br>
+      </div>
+      <mc-team [data]="data?.elements" class="card-body"></mc-team>
+    </section>
+    <section  class="col-md-6 pt-4">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="16">
+    
+          <agm-marker [latitude]="lat" [longitude]="lng" [label]="label" [title]="label" openInfoWindow="true" draggable="true">
+            <agm-info-window isOpen="true" >
+              <span [innerHtml]="data?.map"></span>
+            </agm-info-window>
+          </agm-marker>
+        </agm-map>
+      </section>
+  </div>
+</div>
+

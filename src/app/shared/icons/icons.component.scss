@@ -1,0 +1,17 @@
+.icons {
+    > span {
+        float: left;
+        margin-right: 20px;
+        height: 20px;
+        width: 20px;
+        background: red;
+        display: inline-block;
+        &.blue {
+            background-color: #158dca !important;
+        }
+
+        &.grey {
+            background-color: #5A5A5A !important;
+        }
+    }
+}

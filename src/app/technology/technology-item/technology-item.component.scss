@@ -1,0 +1,35 @@
+.item {
+    > .title {
+        position: relative;
+        font-size: 40px;
+        font-weight: 800;
+
+        mc-icons {
+            position: absolute;
+            top: 22px;
+            right: 0;
+        }
+    }
+    > .text {
+        font-weight: 500;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1000px) { 
+    mc-icons {
+        top: -5px !important;
+        display: inline-block;
+        width: 100%;
+        position: relative !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 30px !important;
+    }
+    .text {
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,66 @@
+.header-img {
+    background: red;
+    background: url('../../assets/marine_mix2.jpg') 0 0;
+    background-size: 100%;
+    width: 100%;
+    // background-repeat: no-repeat;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+    background-position: center;
+    // height: 80px;
+    position: relative;
+    z-index: -1;
+    > .text {
+        z-index: 100;
+        color: darken(white, 10%);;
+        position: relative;
+
+        mc-icons {
+            position: absolute;
+            top: 62px;
+            right: 15px;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: .9;
+        background: #024997;
+    }
+}
+h1 {
+    font-weight: 800;
+}
+.offer-item {
+    color: darken(white, 10%);
+    font-weight: 500;
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.1;
+        padding: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+
+
+    .header-img::after {
+        opacity: .8;
+    }
+    h1 {
+        font-size: 34px !important;
+    }
+    .offer-item  {
+        .title {
+            font-size: 20px !important;
+        }
+        .description {
+            font-size: 14px !important;
+        }
+    }
+}

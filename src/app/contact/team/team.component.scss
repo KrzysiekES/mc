@@ -1,0 +1,22 @@
+:host {
+    padding-bottom: 0;
+}
+
+.card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.phone-number {
+    margin-top: 0;
+    font-size: 20px;
+}
+.font-weight-bold {
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 768px) { 
+
+    p {
+      font-size: 16px !important;
+    }
+  }

@@ -1,0 +1,15 @@
+footer {
+    background: #010A15;
+    ul {
+        margin: 0;
+        list-style: none;
+        li {
+            float: left;
+            padding-right: 10px;
+            a {
+                color: white;
+                // text-decoration: underline;
+            }
+        }
+    }
+}

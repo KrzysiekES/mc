@@ -1,0 +1,18 @@
+
+<div class="header-img">
+  <div class="container pt-5 text">
+      <mc-icons></mc-icons>
+    <h1>{{ data?.title }}</h1>
+    <div class="row">
+      <div *ngFor="let item of data?.items" class="offer-item col-md-4">
+        <div class="title">{{item?.title}}</div>
+        <div class="description">
+          <ul>
+            <li *ngFor="let element of item?.elements">{{ element?.text }}</li>
+          </ul>
+          {{ item?.text }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
+    background-size: cover;
+}    
+.navbar {
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+:host /deep/ .navbar.scrolling-navbar {
+    background-color: rgba(0,0,0,.3);
+}
+@media only screen and (max-width: 768px) {
+    :host /deep/ .navbar.scrolling-navbar {
+        background-color: rgba(0,0,0,.7);
+    }
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+
+.img-logo {
+    width: 70px;
+}
+
+
+
+  
